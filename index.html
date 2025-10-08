@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deforestation Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #228B22;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #556B2F;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .login-form, .signup-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #228B22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #006400;
+        }
+        .content {
+            line-height: 1.6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Deforestation Awareness</h1>
+        <p>Learn about the threats to our forests and how we can protect them</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('login')">Login</a>
+        <a href="#" onclick="showPage('signup')">Signup</a>
+        <a href="#" onclick="showPage('overview')">Overview</a>
+        <a href="#" onclick="showPage('causes')">Causes</a>
+        <a href="#" onclick="showPage('impact')">Impact</a>
+        <a href="#" onclick="showPage('wwf')">What WWF is Doing</a>
+    </nav>
+
+    <!-- Login Page -->
+    <div id="login" class="container login-form">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="#" onclick="showPage('signup')">Don't have an account? Signup</a></p>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signup" class="container signup-form hidden">
+        <h2>Signup</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p><a href="#" onclick="showPage('login')">Already have an account? Login</a></p>
+    </div>
+
+    <!-- Overview Page -->
+    <div id="overview" class="container hidden">
+        <div class="content">
+            <h2>Overview</h2>
+            <p>Forests cover nearly one-third of the land area on our planet and are home to most of the world’s life on land. They are also essential to human health, purifying our water and air and serving as our first line of defense against new infectious diseases. Additionally, forests provide more than 86 million green jobs and resources such as food and fuel that support billions of people’s livelihoods. Forests also play a critical role in mitigating climate change because they act as carbon sinks—soaking up carbon dioxide that would otherwise be free in the atmosphere and contributing to ongoing changes in climate patterns.</p>
+            <p>But forests across the globe are under threat, jeopardizing these benefits. The threats manifest themselves in the form of deforestation and forest degradation. The leading cause of deforestation is agriculture, with poorly planned infrastructure another significant contributor to global deforestation. In 2024, the world lost 16.6 million acres of tropical primary rainforests, equivalent to a rate of 18 soccer fields per minute. The primary causes of forest degradation are logging activities, livestock grazing, and the construction of roads.</p>
+            <p>Deforestation is a particular concern in tropical rain forests because these forests are home to much of the world’s biodiversity. In the Amazon alone, around 17% of the forest has been lost in the last 50 years, mainly due to forest conversion for cattle ranching. Deforestation in this region is especially rampant near more populated areas, roads, and rivers, but remote areas have also been encroached upon with the discovery of valuable resources like gold and oil.</p>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/Deforestation_for_cattle_ranching_in_the_Amazon/portrait_overview/37cj2utov0_deforestation_overview_cattle_ranchingHI_51682.jpg" alt="Deforestation for cattle ranching in the Amazon">
+        </div>
+    </div>
+
+    <!-- Causes Page -->
+    <div id="causes" class="container hidden">
+        <div class="content">
+            <h2>Causes</h2>
+            <p>Deforestation can happen quickly, such as when a fire sweeps through the landscape or the forest is clear-cut to make way for an oil palm plantation. While deforestation appears to be declining in some countries, it remains disturbingly high in others—including Brazil and the Democratic Republic of the Congo.</p>
+            <p>Two-thirds of global forest cover loss is occurring in the tropic and subtropic regions of the world, where vast clusters of deforestation hot spots—also known as "deforestation fronts"—are destroying the important ecosystem services forests provide. There are 24 of these hot spots that are spread across Latin America, sub-Saharan Africa, Southeast Asia, and Oceania.</p>
+            <p><strong>Fuelwood Harvesting</strong><br>
+            Around the world, wood is still a popular fuel choice for cooking and heating, and about half of the illegal removal of timber from forests is thought to be for fuelwood.</p>
+            <p><strong>Conversion to Agriculture</strong><br>
+            Expanding agriculture, due to increased demand and shifts in diet toward greater meat consumption, is responsible for most of the world’s deforestation. In addition, agricultural products, such as soy and palm oil, are used in an ever-increasing list of products, from animal feed to lipstick to biofuels. Rising demand has created incentives to convert forests to farmland and ranch land. Once a forest is lost to agriculture, it is usually gone forever—along with many of the plants and animals that once lived there.</p>
+            <p><strong>Fires</strong><br>
+            Fires are a natural and beneficial element of many forest landscapes, but they are problematic when they occur in the wrong place, at the wrong frequency, or at the wrong severity. Climate change and wildfires also mutually reinforce each other, and the fires burning today in much of the world are bigger, more intense, and longer lasting than before. Each year, millions of acres of forest are destroyed or degraded by fire. Fire is often used to clear land for other purposes like planting crops. These fires not only alter the structure and composition of forests, but they can open up forests to invasive species, threaten biological diversity, alter water cycles and soil fertility, and destroy the livelihoods of the people who live in and around the forests.</p>
+            <p><strong>Infrastructure</strong><br>
+            Infrastructure—particularly linear infrastructure (such as roads, railways, power lines, and canals) and dams—is a leading driver of deforestation. Transportation and energy infrastructure are considered essential elements of a thriving economy, but they are often a major cause of negative environmental impacts, particularly when poorly planned or built. Forests are especially vulnerable to these impacts because many of the world’s remaining forest areas are targeted for expanding agriculture, livestock, and timber production and contain rich deposits of oil, coal, natural gas, and minerals. Developing the infrastructure required for commodity production and resource extraction—including access roads, railroads, hydropower dams, ports, and power lines—can cause severe environmental damage. This includes the fragmentation and destruction of forest and freshwater habitats, interruption of wildlife migration routes, erosion, air and land pollution, and other indirect impacts associated with making previously inaccessible areas more reachable. In the Brazilian Amazon, for example, 95% of deforestation occurs within about three and a half miles of a road.</p>
+            <p>Additionally, it is bad for the infrastructure when planning and design neglect to fully consider natural systems. If planners, engineers, and financiers account for the important services intact and healthy ecosystems provide to the long-term viability of infrastructure, they can reduce costly risks caused by landslides, flooding, erosion, and other hazards to people and the infrastructure they rely upon. Projects are more likely to fail or increase significantly in cost when they do not account for social concerns and ecological and climate factors.</p>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/Deforestation_in_Tesso_Nilo_Sumatra/story_full_width/1e7g2a63k2_deforestation_causes_HI_104236.jpg" alt="Deforestation in Tesso Nilo, Sumatra">
+        </div>
+    </div>
+
+    <!-- Impact Page -->
+    <div id="impact" class="container hidden">
+        <div class="content">
+            <h2>Impact</h2>
+            <p><strong>Increased Greenhouse Gas Emissions</strong><br>
+            Forests are carbon sinks and, therefore, help mitigate the emission of carbon dioxide and other greenhouse gases. Tropical forests alone hold more than 228 to 247 gigatons of carbon, more than seven times the amount emitted by human activities annually.</p>
+            <p>But when forests are cut, burned, or otherwise removed, they emit carbon instead of absorbing carbon. In 2022, deforestation accounted for about 7% of global emissions. In some parts of the Amazon from 2010 to 2018, emissions from deforestation and forest fires exceeded how much carbon forests sequestered, turning them into a net source of carbon emissions rather than a carbon sink. These greenhouse gas emissions contribute to rising temperatures, changes in weather and water patterns, and an increased frequency of extreme weather events. For example, in Sumatra, rainforests on deep peatlands are being cleared, drained, and converted to pulp plantations, contributing to Indonesia’s high greenhouse gas emissions. Changes in climate can also affect forest-dwelling creatures by altering their habitats and decreasing the availability of food and water. Some will adapt by moving to higher elevations or latitudes, but others will not.</p>
+            <p><strong>Disruption of Water Cycles</strong><br>
+            Healthy forests play a vital role in the local water cycle by helping to create local rainfall. But when deforestation or degradation occurs, forests are less capable of fulfilling this role, resulting in changes in precipitation and river flow.</p>
+            <p><strong>Increased Soil Erosion</strong><br>
+            Without trees to anchor fertile soil, erosion can occur and sweep the land into rivers. The agricultural plants that often replace the trees cannot hold onto the soil as effectively. Many of these crops—such as coffee, cotton, palm oil, soybean, and wheat—can actually exacerbate soil erosion. Scientists have estimated that a third of the world’s arable land has been lost through soil erosion and other types of degradation since 1960. As fertile soil washes away, agricultural producers move on, clearing more forest and continuing the cycle of soil loss.</p>
+            <p><strong>Disrupted Livelihoods</strong><br>
+            Billions of people rely on forests for shelter, livelihoods, water, fuel, and food security. Indigenous peoples and local communities are vital custodians of the planet’s remaining natural landscapes, with at least 15.5% (nearly 2 million square miles) of the total forest area formally and traditionally governed by them. But deforestation disrupts the lives of these people, sometimes with devastating consequences. In the Greater Mekong in Southeast Asia, where land tenure systems are weak, deforestation has contributed to social conflict and migration. In Brazil, land grabbing and illegal deforestation on Indigenous peoples' lands are affecting the availability of resources they need to survive.</p>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/Forest_in_Ecuador/story_full_width/9lu8lxrorw_forests_why_matterHI_51818.jpg" alt="Forest in Ecuador">
+        </div>
+    </div>
+
+    <!-- WWF Page -->
+    <div id="wwf" class="container hidden">
+        <div class="content">
+            <h2>What WWF is Doing</h2>
+            <p>WWF has been working to protect forests for more than 50 years, partnering with governments, companies, communities, and other stakeholders to promote responsible management of forests and agricultural land, combat illegal logging, reform trade policies, protect forested areas, and more.</p>
+            <p>Through these efforts, WWF aims to halt deforestation and restore forests, ensuring the vital benefits forests provide to people and wildlife are preserved for future generations. For more details, visit the <a href="https://www.worldwildlife.org/threats/deforestation-and-forest-degradation" target="_blank">WWF Deforestation Page</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deforestation Awareness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.container');
+            pages.forEach(page => page.classList.add('hidden'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.remove('hidden');
+            
+            // Handle form submissions (basic alert for demo)
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Form submitted! (This is a demo - no backend integration)');
+                });
+            });
+        }
+        
+        // Show login by default
+        showPage('login');
+    </script>
+
+</body>
+</html>
